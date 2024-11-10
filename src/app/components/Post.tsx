@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Comments from "./Comments"
 
 const Post=()=>{
     return(
@@ -41,13 +42,53 @@ const Post=()=>{
              </div>
 
               {/* INTERACTION */}
-            <div className="flex items-center justify-betweentext-sm">
+            <div className="flex items-center justify-between text-sm my-4">
                 <div className="flex gap-8">
-                    
+                    <div className="flex p-2 items-center bg-slate-50 gap-4 rounded-xl">
+                        <Image 
+                            src="/like.png" 
+                            alt="" 
+                            width={16} 
+                            height={16} 
+                            className="cursor-pointer"
+                        />
+                        <span className="text-gray-300">|</span>
+                        <span className="text-gray-300">123<span className="hidden md:inline">Likes</span>
+                        </span>
+
+                    </div>
+                    <div className="flex items-center p-2 bg-slate-50 gap-4 rounded-xl">
+                        <Image 
+                            src="/comment.png" 
+                            alt="" 
+                            width={16} 
+                            height={16} 
+                            className="cursor-pointer"
+                        />
+                        <span className="text-gray-300">|</span>
+                        <span className="text-gray-300">123<span className="hidden md:inline">Comments</span>
+                        </span>
+
+                    </div>
                 </div>
-                <div className=""></div>
+                <div className="">
+                <div className="flex items-center bg-slate-50 p-2 gap-4 rounded-xl">
+                        <Image 
+                            src="/share.png" 
+                            alt="" 
+                            width={16} 
+                            height={16} 
+                            className="cursor-pointer"
+                        />
+                        <span className="text-gray-300">|</span>
+                        <span className="text-gray-300">123<span className="hidden md:inline">Shares</span>
+                        </span>
+
+                    </div>
+                </div>
 
             </div>
+            <Comments/>
         </div>
     )
 }
