@@ -2,16 +2,20 @@
 const nextConfig = {
   experimental: {
     reactCompiler: true,
-    ppr: 'incremental'
+    ppr: 'incremental',
   },
-  images:{
-    remotePatterns:[
+  images: {
+    remotePatterns: [
       {
-        protocol:"https",
-        hostname:"images.pexels.com",
-      }
-    ]
-  }
+        protocol: 'https',
+        hostname: 'www.pexels.com',  
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
