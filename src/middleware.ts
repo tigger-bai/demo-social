@@ -1,12 +1,10 @@
-import { auth, clerkMiddleware,createRouteMatcher ,} from "@clerk/nextjs/server";
-
-const isProtectedRoute = createRouteMatcher(["/settings(.*)"]);
-const isPublicRoute = createRouteMatcher(['/sign-in(.*)', '/sign-up(.*)'])
-
+import { auth,clerkMiddleware, createRouteMatcher} from '@clerk/nextjs/server'
+const isProtectedRoute = createRouteMatcher(["/settings(.*)"])
 
 export default clerkMiddleware((auth,req)=>{
-    if(isProtectedRoute(req)) auth().protect();
+  if(isProtectedRoute(req)) auth().protect();
 });
+
 export const config = {
   matcher: [
     // Skip Next.js internals and all static files, unless found in search params

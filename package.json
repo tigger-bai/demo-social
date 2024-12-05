@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.2.0",
+    "@clerk/nextjs": "^6.5.2",
+    "@prisma/client": "^6.0.1",
     "babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
-    "next": "^15.0.4-canary.2",
-    "react": "^19.0.0-rc-66855b96-20241106",
-    "react-dom": "^19.0.0-rc-66855b96-20241106"
+    "next": "^15.0.4-canary.34",
+    "prisma": "^6.0.1",
+    "react": "^19.0.0-rc-fb9a90fa48-20240614",
+    "react-dom": "^19.0.0-rc-fb9a90fa48-20240614"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -28,5 +30,10 @@
   "overrides": {
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
-  }
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
