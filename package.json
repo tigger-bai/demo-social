@@ -9,13 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.5.2",
+    "@clerk/nextjs": "^6.7.1",
     "@prisma/client": "^6.0.1",
     "babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
-    "next": "^15.0.4-canary.34",
+    "next": "^15.0.4",
+    "next-cloudinary": "^6.16.0",
     "prisma": "^6.0.1",
-    "react": "^19.0.0-rc-fb9a90fa48-20240614",
-    "react-dom": "^19.0.0-rc-fb9a90fa48-20240614"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "svix": "^1.42.0"
   },
   "devDependencies": {
     "@types/node": "^20",
